@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns - 16 anos!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Feliz Aniversário!</h1>
+        <h2>Parabéns pelos seus 16 anos, Isabella, minha querida afilhada!</h2>
+    </header>
+    <main>
+        <section class="highlight">
+            <p>Por mais que nós ainda não temos as melhores fotos, estar com você todos os dias é recompensador, agradeço a Deus sempre por nossa relação de amizade, padrinho e afilhada, irmão e irmã.</p>
+        </section>
+        <section class="gallery">
+            <img src="foto1.jpeg" alt="Foto 1">
+            <img src="foto2.jpeg" alt="Foto 2">
+            <img src="foto3.jpeg" alt="Foto 3">
+            <img src="foto4.jpeg" alt="Foto 4">
+        </section>
+        <button id="confettiButton">Comemorar!</button>
+    </main>
+    <footer>
+        <p>Com carinho, de toda sua família ❤</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        document.getElementById('confettiButton').addEventListener('click', () => {
+            confetti({ particleCount: 200, spread: 90, origin: { y: 0.6 } });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(to bottom, #ffe4ec, #fff8e7);
+color: #333;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+header {
+text-align: center;
+padding: 20px;
+background-color: #ff4081;
+color: white;
+}
+
+
+header h1 {
+font-size: 2.2rem;
+}
+
+
+header h2 {
+font-size: 1.2rem;
+margin-top: 5px;
+}
+
+
+main {
+flex: 1;
+padding: 20px;
+text-align: center;
+}
+
+
+.highlight p {
+font-size: 1.1rem;
+margin-bottom: 20px;
+}
+
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+gap: 15px;
+margin-bottom: 20px;
+}
+
+
+.gallery img {
+width: 100%;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s ease;
+}
+
+
+.gallery img:hover {
+transform: scale(1.05);
+}
+
+
+button {
+background-color: #ff4081;
+color: white;
+border: none;
+padding: 15px 40px;
+font-size: 1rem;
+border-radius: 25px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+background-color: #d81b60;
+}
+
+
+footer {
+text-align: center;
+padding: 15px;
+background-color: #ff4081;
+color: white;
+font-size: 0.9rem;
+}
